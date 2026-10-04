@@ -86,16 +86,6 @@ const [placementScore, setPlacementScore] =
 </a>
         </div>
 
-       <button
-  onClick={() =>
-    document
-      .getElementById("discover")
-      ?.scrollIntoView({ behavior: "smooth" })
-  }
-  
->className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:grid-cols-2 lg:gap-14 lg:px-10 lg:pb-28 lg:pt-20"
-  Start Sprint
-</button>
       </nav>
 
       {/* Hero */}
