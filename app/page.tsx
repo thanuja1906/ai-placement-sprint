@@ -99,9 +99,9 @@ const [placementScore, setPlacementScore] =
       </nav>
 
       {/* Hero */}
-      <section className="mx-auto grid max-w-7xl items-center gap-14 px-6 pb-20 pt-14 lg:grid-cols-2 lg:px-10 lg:pb-28 lg:pt-20">
-
-        {/* Left */}
+      <section
+  className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:grid-cols-2 lg:gap-14 lg:px-10 lg:pb-28 lg:pt-20"
+>
         <div>
 
           <motion.div
@@ -114,18 +114,19 @@ const [placementScore, setPlacementScore] =
             Built for students who want proof, not just certificates
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
-          >
-            What AI project can{" "}
-            <span className="bg-gradient-to-r from-violet-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              YOU
-            </span>{" "}
-            build in 60 minutes?
-          </motion.h1>
+         <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="max-w-3xl text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
+>
+  Stop collecting tutorials.
+  <br />
+  Start collecting{" "}
+  <span className="bg-gradient-to-r from-violet-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent">
+    proof.
+  </span>
+</motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -133,8 +134,8 @@ const [placementScore, setPlacementScore] =
             transition={{ duration: 0.6, delay: 0.15 }}
             className="mt-7 max-w-xl text-lg leading-8 text-slate-600"
           >
-            Discover a project matched to your skills and placement goal.
-            Build it. Get evaluated. Leave with proof you can actually show.
+           Build a placement-ready AI project in 60 minutes, get evaluated, and earn a
+Project Passport you can actually show.
           </motion.p>
 
          {/* CTA */}
@@ -160,15 +161,15 @@ const [placementScore, setPlacementScore] =
   </button>
 
   <button
-    onClick={() =>
-      document
-        .getElementById("how-it-works")
-        ?.scrollIntoView({ behavior: "smooth" })
-    }
-    className="rounded-full border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 shadow-sm transition hover:border-violet-200 hover:text-violet-600"
-  >
-    See the 3-step journey
-  </button>
+  onClick={() =>
+    document
+      .getElementById("discover")
+      ?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="hidden rounded-full bg-violet-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-violet-200 transition hover:-translate-y-0.5 hover:bg-violet-700 hover:shadow-xl sm:block"
+>
+  Start Sprint
+</button>
 </motion.div>
           {/* Quick benefits */}
           <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-500">
@@ -478,7 +479,7 @@ const [placementScore, setPlacementScore] =
               number="01"
               icon={<Sparkles size={22} />}
               title="Discover"
-              description="Tell us your branch, skill level and placement goal."
+             description="Tell us your branch, current level and placement goal."
               color="violet"
             />
 
@@ -486,7 +487,7 @@ const [placementScore, setPlacementScore] =
               number="02"
               icon={<Zap size={22} />}
               title="Build"
-              description="Complete a personalized AI project in 60 minutes."
+              description="Build a personalized AI project through a focused 60-minute sprint."
               color="blue"
             />
 
@@ -494,7 +495,7 @@ const [placementScore, setPlacementScore] =
               number="03"
               icon={<Trophy size={22} />}
               title="Prove"
-              description="Get your Placement Score and shareable Project Passport."
+              description="Get evaluated, earn a Placement Score and generate your Project Passport."
               color="cyan"
             />
 
